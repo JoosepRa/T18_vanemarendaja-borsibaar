@@ -6,9 +6,13 @@ import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 public record AddStockRequestDto(
-                @NotNull(message = "Product ID is required") Long productId,
+		@NotNull(message = "Product ID is required")
+		Long productId,
 
-                @NotNull(message = "Quantity is required") @DecimalMin(value = "0.0001", message = "Quantity must be greater than 0") BigDecimal quantity,
+		@NotNull(message = "Quantity is required")
+		@DecimalMin(value = "0.0001", message = "Quantity must be greater than 0")
+		BigDecimal quantity,
 
-                String notes) {
+		String notes
+) {
 }
