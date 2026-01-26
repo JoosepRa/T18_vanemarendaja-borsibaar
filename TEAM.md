@@ -2,7 +2,7 @@
 
 ### Members
 * Joosep Mart Männik (joosep-mm)
-* 2
+* Andero Schütz
 * 3
 * 4
 * 5
