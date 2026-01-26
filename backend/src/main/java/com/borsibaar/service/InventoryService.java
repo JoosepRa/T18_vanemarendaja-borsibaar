@@ -216,7 +216,7 @@ public class InventoryService {
         Inventory inventory = inventoryRepository
                 .findByOrganizationIdAndProductId(organizationId, request.productId())
                 .orElseThrow(() -> new ResponseStatusException(
-                        HttpStatus.NOT_FOUND, "Inventory is not found for this product"));
+                        HttpStatus.NOT_FOUND, "Inventory not found for this product"));
 
         BigDecimal oldQuantity = inventory.getQuantity();
         BigDecimal quantityChange = request.newQuantity().subtract(oldQuantity);
